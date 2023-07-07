@@ -1,8 +1,10 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-const StatusMessage = ({ winner, isXNext, squares }) => {
+const StatusMessage = ({ winner, gamingBoard }) => {
    // eslint-disable-next-line react/prop-types
+   const { squares, isXNext } = gamingBoard;
+
    const noMoveLeft = squares.every(squareValue => squareValue !== null);
 
    const nextPlayer = isXNext ? 'X' : 'O';
