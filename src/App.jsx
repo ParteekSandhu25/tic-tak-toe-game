@@ -93,6 +93,8 @@ function App() {
          </h2>
 
          <History history={history} moveTo={moveTo} currentMove={currentMove} />
+
+         <div className="bg-balls" />
       </div>
    );
 }
