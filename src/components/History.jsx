@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const History = ({ history, moveTo, currentMove }) => {
    return (
       <div className="history-wrapper">
