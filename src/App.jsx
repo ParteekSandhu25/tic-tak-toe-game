@@ -76,7 +76,9 @@ function App() {
 
          <button
             type="button"
-            className={`btn-reset ${winner ? 'active' : ''}`}
+            className={`btn-reset ${winner ? 'active' : ''} ${
+               currentMove === 9 ? 'active' : ''
+            }`}
             onClick={onNewGameStart}
          >
             Start New Game
